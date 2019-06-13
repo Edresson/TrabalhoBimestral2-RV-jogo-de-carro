@@ -7066,7 +7066,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1000
   m_Drag: 0.1
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.09
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -7120,7 +7120,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7134284105866931044}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d963df58504b69045b8d0d746ba6f777, type: 3}
   m_Name: 
@@ -7192,7 +7192,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7134284105866931044}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 96468c245ae8e0d4f8f1c7a7b8b0542e, type: 3}
   m_Name: 
@@ -7323,19 +7323,19 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 100006, guid: 7ad45c544719e234b819ba76b8b00770, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 7ad45c544719e234b819ba76b8b00770, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 100010, guid: 7ad45c544719e234b819ba76b8b00770, type: 3}
+    - target: {fileID: 100006, guid: 7ad45c544719e234b819ba76b8b00770, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 7ad45c544719e234b819ba76b8b00770, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 7ad45c544719e234b819ba76b8b00770, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}

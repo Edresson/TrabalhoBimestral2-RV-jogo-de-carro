@@ -1561,6 +1561,16 @@ PrefabInstance:
       propertyPath: circuit
       value: 
       objectReference: {fileID: 294098530}
+    - target: {fileID: 5057333130298872181, guid: 484506b613cc762aa9884978adfeaac4,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4046108603924416187, guid: 484506b613cc762aa9884978adfeaac4,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 484506b613cc762aa9884978adfeaac4, type: 3}
 --- !u!4 &252700182 stripped
@@ -1643,7 +1653,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 266585819}
   m_LocalRotation: {x: 0.3362418, y: 0.29958072, z: -0.109465815, w: 0.88612086}
-  m_LocalPosition: {x: 0, y: 0, z: 103.19}
+  m_LocalPosition: {x: 0, y: 0, z: 93.3}
   m_LocalScale: {x: 1.5517933, y: 2.3580706, z: 2.3580728}
   m_Children: []
   m_Father: {fileID: 1757693370}
@@ -1651,7 +1661,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 65.9, y: 2.63}
+  m_AnchoredPosition: {x: 34, y: 26.4}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!54 &266585821
@@ -2920,7 +2930,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474993769}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 168.33104, y: 3.5417595, z: -74.84888}
+  m_LocalPosition: {x: 177.8, y: 3.5417595, z: -74.84888}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1276477016}
@@ -3792,7 +3802,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 627177949}
   m_LocalRotation: {x: 0.23894571, y: -0.27147362, z: -0.040975194, w: 0.93141186}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 84, y: 4.1, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1412633855}
@@ -4425,6 +4435,16 @@ PrefabInstance:
       propertyPath: circuit
       value: 
       objectReference: {fileID: 294098530}
+    - target: {fileID: 554313058680233629, guid: a5f52b5c2a0aa5c769f489bae3e7b19c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1362544528593958888, guid: a5f52b5c2a0aa5c769f489bae3e7b19c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5f52b5c2a0aa5c769f489bae3e7b19c, type: 3}
 --- !u!4 &725369469 stripped
@@ -8227,6 +8247,16 @@ PrefabInstance:
       propertyPath: m_AccelWanderAmount
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 7106559046283483409, guid: ab52cafc143324ebcba9e0e129406bd0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5305695721658993801, guid: ab52cafc143324ebcba9e0e129406bd0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab52cafc143324ebcba9e0e129406bd0, type: 3}
 --- !u!4 &1800813393 stripped
@@ -8627,6 +8657,16 @@ PrefabInstance:
       propertyPath: circuit
       value: 
       objectReference: {fileID: 294098530}
+    - target: {fileID: 6446585474778138024, guid: a2c396a9c57e183a5ac110cf5e13be8a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 285782057390186608, guid: a2c396a9c57e183a5ac110cf5e13be8a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2c396a9c57e183a5ac110cf5e13be8a, type: 3}
 --- !u!4 &1922935273 stripped
@@ -8707,6 +8747,16 @@ PrefabInstance:
       propertyPath: circuit
       value: 
       objectReference: {fileID: 294098530}
+    - target: {fileID: 2969747694188828579, guid: c118db857bd92055190f5a05e0236f33,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7039092096590192054, guid: c118db857bd92055190f5a05e0236f33,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c118db857bd92055190f5a05e0236f33, type: 3}
 --- !u!4 &1924602030 stripped
