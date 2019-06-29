@@ -13,9 +13,11 @@ public class DriftCamera : MonoBehaviour
     }
 
     public float smoothing = 6f;
-    public Transform lookAtTarget;
-    public Transform positionTarget;
-    public Transform sideView;
+
+    public GameObject player;
+    // public Transform lookAtTarget;
+    // public Transform positionTarget;
+    // public Transform sideView;
     public AdvancedOptions advancedOptions;
 
     bool m_ShowingSideView;
@@ -43,6 +45,8 @@ public class DriftCamera : MonoBehaviour
 
     private void UpdateCamera ()
     {
+        Transform sideView = player.GetComponent<CarChoiceController>().CamSidePosition.transform;
+        
         if (m_ShowingSideView)
         {
             transform.position = sideView.position;
@@ -50,8 +54,12 @@ public class DriftCamera : MonoBehaviour
         }
         else
         {
-            transform.position = Vector3.Lerp(transform.position, positionTarget.position, Time.deltaTime * smoothing);
-            transform.LookAt(lookAtTarget);
+            transform.position = Vector3.Lerp(
+                transform.position, 
+                player.GetComponent<CarChoiceController>().CamPosition.transform.position, 
+                Time.deltaTime * smoothing
+            );
+            transform.LookAt(player.GetComponent<CarChoiceController>().CamLookAtTarget.transform);
         }
     }
 }
