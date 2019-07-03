@@ -4,19 +4,12 @@ using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
-    private Toggle m_MenuToggle;
-	private float m_TimeScaleRef = 1f;
+    public GameObject pauseCanvas;
+    private float m_TimeScaleRef = 1f;
     private float m_VolumeRef = 1f;
-    private bool m_Paused;
+    private bool m_Paused = false;
 
-
-    void Awake()
-    {
-        m_MenuToggle = GetComponent <Toggle> ();
-	}
-
-
-    private void MenuOn ()
+    private void MenuOn()
     {
         m_TimeScaleRef = Time.timeScale;
         Time.timeScale = 0f;
@@ -25,39 +18,39 @@ public class PauseMenu : MonoBehaviour
         AudioListener.volume = 0f;
 
         m_Paused = true;
+        pauseCanvas.SetActive(true);
     }
 
-
-    public void MenuOff ()
+    public void MenuOff()
     {
         Time.timeScale = m_TimeScaleRef;
         AudioListener.volume = m_VolumeRef;
         m_Paused = false;
+        pauseCanvas.SetActive(false);
     }
 
-
-    public void OnMenuStatusChange ()
+    public void OnMenuStatusChange()
     {
-        if (m_MenuToggle.isOn && !m_Paused)
-        {
+        if (!m_Paused)
             MenuOn();
-        }
-        else if (!m_MenuToggle.isOn && m_Paused)
-        {
+        else
             MenuOff();
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            OnMenuStatusChange();
         }
     }
 
-
-#if !MOBILE_INPUT
-	void Update()
-	{
-		if(Input.GetKeyUp(KeyCode.Escape))
-		{
-		    m_MenuToggle.isOn = !m_MenuToggle.isOn;
-            Cursor.visible = m_MenuToggle.isOn;//force the cursor visible if anythign had hidden it
-		}
-	}
-#endif
-
+    public void QuitGame()
+    {
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
+    }
 }
