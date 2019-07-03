@@ -53,10 +53,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\EnemyChoiceController.cs" />
+     <Compile Include="Assets\CheckPointController.cs" />
      <Compile Include="Assets\Marcos Schultz\MS Sposts Car\Others\PromotionalMSVS.cs" />
      <Compile Include="Assets\Marcos Schultz\MS Sposts Car\Others\WheelMeshes.cs" />
-     <Compile Include="Assets\PauseMenuController.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -73,10 +72,12 @@
      <Compile Include="Assets\Scripts\CarSwitcher.cs" />
      <Compile Include="Assets\Scripts\DriftCamera.cs" />
      <Compile Include="Assets\Scripts\EasySuspension.cs" />
+     <Compile Include="Assets\Scripts\EnemyChoiceController.cs" />
      <Compile Include="Assets\Scripts\funcontroller.cs" />
      <Compile Include="Assets\Scripts\GraphOverlay.cs" />
      <Compile Include="Assets\Scripts\MenuController.cs" />
      <Compile Include="Assets\Scripts\MinimapController.cs" />
+     <Compile Include="Assets\Scripts\RaceController.cs" />
      <Compile Include="Assets\Scripts\TarmacMenuController.cs" />
      <Compile Include="Assets\Scripts\WheelDrive.cs" />
      <Compile Include="Assets\Sport Car - 3D model\Scripts\CameraScript.cs" />
@@ -99,17 +100,17 @@
  <Reference Include="Unity.CollabProxy.Editor">
  <HintPath>/Users/divensi/Projetos/Unity/trab/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>/Users/divensi/Projetos/Unity/trab/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>/Users/divensi/Projetos/Unity/trab/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
- </Reference>
  <Reference Include="Unity.Postprocessing.Editor">
  <HintPath>/Users/divensi/Projetos/Unity/trab/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Postprocessing.Runtime">
  <HintPath>/Users/divensi/Projetos/Unity/trab/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro">
+ <HintPath>/Users/divensi/Projetos/Unity/trab/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Analytics.DataPrivacy">
+ <HintPath>/Users/divensi/Projetos/Unity/trab/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/Hub/Editor/2018.3.14f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
