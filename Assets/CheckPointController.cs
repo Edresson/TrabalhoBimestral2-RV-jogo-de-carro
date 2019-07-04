@@ -5,12 +5,12 @@ using UnityEngine;
 public class CheckPointController : MonoBehaviour
 {
     public int index;
-    void OnTriggerEnter()
+    void OnTriggerEnter(Collider other)
     {
         RaceController RaceController = transform.parent.GetComponent<RaceController>();
 
         if (RaceController != null) {
-            RaceController.CompletaCheckpoint(index);
+            RaceController.CompletaCheckpoint(index, other);
         }
     }
 }

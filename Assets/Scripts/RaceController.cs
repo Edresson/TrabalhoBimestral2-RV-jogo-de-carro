@@ -10,17 +10,19 @@ public class RaceController : MonoBehaviour
     public int totalVoltas = 2;
 
     public Text stringVoltas;
+    public Text stringFinal;
+    public GameObject canvasFinal;
 
     public List<bool>  checkpoints;
 
-    public void CompletaCheckpoint(int checkpoint)
+    public void CompletaCheckpoint(int checkpoint, Collider other)
     {
         checkpoints[checkpoint] = true;
 
-        VerificaVolta();
+        VerificaVolta(other);
     }
 
-    public void VerificaVolta()
+    public void VerificaVolta(Collider other)
     {
         var completo = true;
 
@@ -39,13 +41,23 @@ public class RaceController : MonoBehaviour
             AtualizaTexto();
 
             if (voltas == totalVoltas) {
-                FimDoJogo();
+                if (other.CompareTag("Player")) {
+                    FimDoJogo(true);
+                } else {
+                    FimDoJogo(false);
+                }
             }
         }
     }
 
-    void FimDoJogo() {
+    void FimDoJogo(bool sucesso) {
+        canvasFinal.SetActive(true);
 
+        if (sucesso) {
+            stringFinal.text = "Você venceu!";
+        } else {
+            stringFinal.text = "Perdeu!";
+        }
     }
 
     void AtualizaTexto() {
